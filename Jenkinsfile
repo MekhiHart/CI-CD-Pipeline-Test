@@ -20,7 +20,7 @@ pipeline{
 
         stage("Coverage Test"){
             steps{
-                step{
+                script{
                     sh "coverage report -m"
                 }
             }
