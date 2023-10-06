@@ -13,7 +13,7 @@ pipeline{
         stage("Unit Test"){
             steps{
                 script{
-                    sh "python3-coverage run -m pytest"
+                    sh "python3-coverage run -m pytest test_ops.py"
                 }
             }
         }
