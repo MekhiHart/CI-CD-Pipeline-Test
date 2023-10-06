@@ -13,7 +13,7 @@ pipeline{
         stage("Unit Test"){
             steps{
                 script{
-                    sh "coverage run -m pytest"
+                    sh "python3-coverage run -m pytest"
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline{
         stage("Coverage Test"){
             steps{
                 script{
-                    sh "coverage report -m"
+                    sh "python3-coverage report -m"
                 }
             }
         }
